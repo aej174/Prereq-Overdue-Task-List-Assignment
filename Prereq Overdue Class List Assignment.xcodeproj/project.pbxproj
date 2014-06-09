@@ -21,6 +21,10 @@
 		2205D6A019264C72007747FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2205D68219264C72007747FD /* UIKit.framework */; };
 		2205D6A819264C72007747FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2205D6A619264C72007747FD /* InfoPlist.strings */; };
 		2205D6AA19264C72007747FD /* Prereq_Overdue_Class_List_AssignmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2205D6A919264C72007747FD /* Prereq_Overdue_Class_List_AssignmentTests.m */; };
+		2205D6B519264E0D007747FD /* AJAddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2205D6B419264E0D007747FD /* AJAddTaskViewController.m */; };
+		2205D6B819264E64007747FD /* AJDetailTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2205D6B719264E64007747FD /* AJDetailTaskViewController.m */; };
+		2205D6BB19264EA4007747FD /* AJEditTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2205D6BA19264EA4007747FD /* AJEditTaskViewController.m */; };
+		2205D6BE19265C97007747FD /* AJTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 2205D6BD19265C97007747FD /* AJTask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		2205D6A519264C72007747FD /* Prereq Overdue Class List AssignmentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Prereq Overdue Class List AssignmentTests-Info.plist"; sourceTree = "<group>"; };
 		2205D6A719264C72007747FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2205D6A919264C72007747FD /* Prereq_Overdue_Class_List_AssignmentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Prereq_Overdue_Class_List_AssignmentTests.m; sourceTree = "<group>"; };
+		2205D6B319264E0D007747FD /* AJAddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJAddTaskViewController.h; sourceTree = "<group>"; };
+		2205D6B419264E0D007747FD /* AJAddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJAddTaskViewController.m; sourceTree = "<group>"; };
+		2205D6B619264E64007747FD /* AJDetailTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJDetailTaskViewController.h; sourceTree = "<group>"; };
+		2205D6B719264E64007747FD /* AJDetailTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJDetailTaskViewController.m; sourceTree = "<group>"; };
+		2205D6B919264EA4007747FD /* AJEditTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJEditTaskViewController.h; sourceTree = "<group>"; };
+		2205D6BA19264EA4007747FD /* AJEditTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJEditTaskViewController.m; sourceTree = "<group>"; };
+		2205D6BC19265C97007747FD /* AJTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJTask.h; sourceTree = "<group>"; };
+		2205D6BD19265C97007747FD /* AJTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJTask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +127,16 @@
 				2205D68D19264C72007747FD /* AJAppDelegate.h */,
 				2205D68E19264C72007747FD /* AJAppDelegate.m */,
 				2205D69019264C72007747FD /* Main.storyboard */,
+				2205D6B919264EA4007747FD /* AJEditTaskViewController.h */,
+				2205D6BA19264EA4007747FD /* AJEditTaskViewController.m */,
+				2205D6B619264E64007747FD /* AJDetailTaskViewController.h */,
+				2205D6B719264E64007747FD /* AJDetailTaskViewController.m */,
+				2205D6B319264E0D007747FD /* AJAddTaskViewController.h */,
+				2205D6B419264E0D007747FD /* AJAddTaskViewController.m */,
 				2205D69319264C72007747FD /* AJViewController.h */,
 				2205D69419264C72007747FD /* AJViewController.m */,
 				2205D69619264C72007747FD /* Images.xcassets */,
+				22473949192D235F0085B33D /* Models */,
 				2205D68519264C72007747FD /* Supporting Files */,
 			);
 			path = "Prereq Overdue Class List Assignment";
@@ -150,6 +169,15 @@
 				2205D6A619264C72007747FD /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22473949192D235F0085B33D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2205D6BC19265C97007747FD /* AJTask.h */,
+				2205D6BD19265C97007747FD /* AJTask.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,7 +280,11 @@
 			files = (
 				2205D68B19264C72007747FD /* main.m in Sources */,
 				2205D69519264C72007747FD /* AJViewController.m in Sources */,
+				2205D6BB19264EA4007747FD /* AJEditTaskViewController.m in Sources */,
+				2205D6B519264E0D007747FD /* AJAddTaskViewController.m in Sources */,
 				2205D68F19264C72007747FD /* AJAppDelegate.m in Sources */,
+				2205D6BE19265C97007747FD /* AJTask.m in Sources */,
+				2205D6B819264E64007747FD /* AJDetailTaskViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +489,7 @@
 				2205D6AF19264C72007747FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2205D6B019264C72007747FD /* Build configuration list for PBXNativeTarget "Prereq Overdue Class List AssignmentTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +498,7 @@
 				2205D6B219264C72007747FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
